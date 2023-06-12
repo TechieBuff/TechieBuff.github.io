@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Login | By Code Info</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <script>
+      function login() {
+        // Perform login logic here
+        // Display success message
+        alert('Log In Successful!');
+
+        // Redirect to the login page
+        window.location.href = 'server.html';
+
+        // Display success message
+        var successMessage = document.getElementById('success-message');
+        successMessage.style.display = 'block';
+      }
+    </script>
+  </head>
+  <body>
+    <div class="login-box">
+      <h1>Login</h1>
+      <form>
+        <label>Email</label>
+        <input type="email" placeholder="" />
+        <label>Password</label>
+        <input type="password" placeholder="" />
+        <input type="button" value="Login" onclick="login()" />
+      </form>
+    </div>
+    <p class="para-2">
+      Don't have an account? <a href="SIGNUP1.html">Sign up here</a>
+    </p>
+
+    <!-- Success Message
+    <div id="success-message" style="display: none;">
+      <h3>Login Successful!</h3>
+      <p>Welcome to our website. Enjoy your experience!</p>
+    </div> -->
+  </body>
+</html>
